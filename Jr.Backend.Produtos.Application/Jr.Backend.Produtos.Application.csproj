@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+    <Folder Include="DependencyInjection\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="UseCase\" />
+  </ItemGroup>
+
+</Project>

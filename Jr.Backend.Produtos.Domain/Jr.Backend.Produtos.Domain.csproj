@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Response\" />
+    <Folder Include="Commands\Request\" />
+    <Folder Include="ValueObjects\" />
+    <Folder Include="Validations\" />
+    <Folder Include="Querys\Request\" />
+    <Folder Include="Querys\Response\" />
+  </ItemGroup>
+
+</Project>
