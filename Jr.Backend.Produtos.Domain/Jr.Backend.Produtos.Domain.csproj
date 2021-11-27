@@ -13,4 +13,9 @@
     <Folder Include="Querys\Response\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Jr.Backend.Libs.Domain" Version="1.0.1" />
+    <PackageReference Include="Jr.Backend.Libs.Domain.Abstractions" Version="1.0.1" />
+  </ItemGroup>
+
 </Project>

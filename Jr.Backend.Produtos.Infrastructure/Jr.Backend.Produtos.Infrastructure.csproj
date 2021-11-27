@@ -11,4 +11,9 @@
     <Folder Include="Repository\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB" Version="1.0.1" />
+    <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB.Abstractions" Version="1.0.1" />
+  </ItemGroup>
+
 </Project>

@@ -2,14 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+	  <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\ApiVersioning.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="Jr.Backend.Libs.API" Version="1.0.1" />
+    <PackageReference Include="Jr.Backend.Libs.API.Abstractions" Version="1.0.1" />
+    <PackageReference Include="Jr.Backend.Libs.Framework" Version="1.0.1" />
+    <PackageReference Include="Jr.Backend.Libs.Security" Version="1.0.1" />
+    <PackageReference Include="Jr.Backend.Libs.Security.Abstractions" Version="1.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
 </Project>
