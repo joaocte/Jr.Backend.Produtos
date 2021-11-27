@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jr.Backend.Produtos.Domain", "Jr.Backend.Produtos.Domain\Jr.Backend.Produtos.Domain.csproj", "{E071AB89-DA36-4ADE-81DB-948D6F8515AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jr.Backend.Produtos.Domain", "Jr.Backend.Produtos.Domain\Jr.Backend.Produtos.Domain.csproj", "{E071AB89-DA36-4ADE-81DB-948D6F8515AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jr.Backend.Produtos.Application", "Jr.Backend.Produtos.Application\Jr.Backend.Produtos.Application.csproj", "{55F827D2-DD62-4737-8764-4F3DEB98B09D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jr.Backend.Produtos.Application", "Jr.Backend.Produtos.Application\Jr.Backend.Produtos.Application.csproj", "{55F827D2-DD62-4737-8764-4F3DEB98B09D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jr.Backend.Produtos.Infrastructure", "Jr.Backend.Produtos.Infrastructure\Jr.Backend.Produtos.Infrastructure.csproj", "{EB89977A-B76F-4014-98FF-82643B662949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jr.Backend.Produtos.Infrastructure", "Jr.Backend.Produtos.Infrastructure\Jr.Backend.Produtos.Infrastructure.csproj", "{EB89977A-B76F-4014-98FF-82643B662949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jr.Backend.Produtos.WorkerService", "Jr.Backend.Produtos.WorkerService\Jr.Backend.Produtos.WorkerService.csproj", "{EB262BC5-DD34-430A-82D4-D531596B2289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jr.Backend.Produtos.WorkerService", "Jr.Backend.Produtos.WorkerService\Jr.Backend.Produtos.WorkerService.csproj", "{EB262BC5-DD34-430A-82D4-D531596B2289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jr.Backend.Produtos.Api", "Jr.Backend.Produtos.Api\Jr.Backend.Produtos.Api.csproj", "{9A15CDE7-FB6F-45D6-B193-B05A38B98695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jr.Backend.Produtos.Api", "Jr.Backend.Produtos.Api\Jr.Backend.Produtos.Api.csproj", "{9A15CDE7-FB6F-45D6-B193-B05A38B98695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jr.Backend.Produtos.Tests", "Jr.Backend.Produtos.Tests\Jr.Backend.Produtos.Tests.csproj", "{2235E443-AE93-471A-B458-1B31D41C7D9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9A15CDE7-FB6F-45D6-B193-B05A38B98695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A15CDE7-FB6F-45D6-B193-B05A38B98695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A15CDE7-FB6F-45D6-B193-B05A38B98695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2235E443-AE93-471A-B458-1B31D41C7D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2235E443-AE93-471A-B458-1B31D41C7D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2235E443-AE93-471A-B458-1B31D41C7D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2235E443-AE93-471A-B458-1B31D41C7D9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

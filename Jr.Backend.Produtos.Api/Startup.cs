@@ -5,6 +5,8 @@ using Jr.Backend.Libs.Security.Abstractions.Infrastructure.Interfaces;
 using Jr.Backend.Libs.Security.DependencyInjection;
 using Jr.Backend.Libs.Security.Infrastructure;
 using Jr.Backend.Libs.Security.Middleware;
+using Jr.Backend.Produtos.Application.DependencyInjection;
+using Jr.Backend.Produtos.Infrastructure.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -38,6 +40,8 @@ namespace Jr.Backend.Produtos.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddServiceDependencyApplication(Configuration);
+            services.AddServiceDependencyInfrastructure();
             services.AddServiceDependencyJrApiSwagger(Configuration, () => jrApiOption);
             services.AddServiceDependencyJrFramework();
             services.AddServiceDependencyJrSecurityApiUsingCustomValidate(() => serSecurityConfiguration);

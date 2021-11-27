@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DependencyInjection\" />
     <Folder Include="Entity\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Repository\" />
@@ -14,6 +13,10 @@
   <ItemGroup>
     <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB" Version="1.0.1" />
     <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB.Abstractions" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jr.Backend.Produtos.Domain\Jr.Backend.Produtos.Domain.csproj" />
   </ItemGroup>
 
 </Project>
