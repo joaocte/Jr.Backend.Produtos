@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Jr.Backend.Produtos.Application.AutoMapper;
+using Jr.Backend.Produtos.Application.UseCase.CadastrarFornecedor;
 using MassTransit;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -14,18 +15,7 @@ namespace Jr.Backend.Produtos.Application.DependencyInjection
         public static void AddServiceDependencyApplication(this IServiceCollection services,
             IConfiguration configuration)
         {
-            services.AddMediatR(Assembly.GetExecutingAssembly());
-
-            var mapperConfig = new MapperConfiguration(mc =>
-            {
-                mc.AddProfile(new MappingProfileToDomain());
-                mc.AddProfile(new MappingProfileToEntity());
-                mc.AddProfile(new MappingProfileToEnvent());
-            });
-
-            IMapper mapper = mapperConfig.CreateMapper();
-            services.AddSingleton(mapper);
-
+            services.AddServiceDependencyApplication();
             services.AddMassTransit(x =>
             {
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
@@ -43,6 +33,24 @@ namespace Jr.Backend.Produtos.Application.DependencyInjection
             });
 
             services.AddMassTransitHostedService();
+        }
+
+        public static void AddServiceDependencyApplication(this IServiceCollection services)
+        {
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfileToDomain());
+                mc.AddProfile(new MappingProfileToEntity());
+                mc.AddProfile(new MappingProfileToEnvent());
+            });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
+            services.AddScoped<ICadastrarFornecedorUseCase, CadastrarFornecedorUseCase>();
+            services.Decorate<ICadastrarFornecedorUseCase, CadastrarFornecedorUseCaseValidation>();
         }
     }
 }
