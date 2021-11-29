@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Jr.Backend.Produtos.Application.AutoMapper;
+using Jr.Backend.Produtos.Application.UseCase.AtualizarFornecedor;
 using Jr.Backend.Produtos.Application.UseCase.CadastrarFornecedor;
 using MassTransit;
 using MediatR;
@@ -51,6 +52,8 @@ namespace Jr.Backend.Produtos.Application.DependencyInjection
 
             services.AddScoped<ICadastrarFornecedorUseCase, CadastrarFornecedorUseCase>();
             services.Decorate<ICadastrarFornecedorUseCase, CadastrarFornecedorUseCaseValidation>();
+            services.AddScoped<IAtualizarFornecedorUseCase, AtualizarFornecedorUseCase>();
+            services.Decorate<IAtualizarFornecedorUseCase, AtualizarFornecedorUseCaseValidation>();
         }
     }
 }
