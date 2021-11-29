@@ -1,5 +1,6 @@
 ﻿using GreenPipes;
 using Jr.Backend.Produtos.Application.DependencyInjection;
+using Jr.Backend.Produtos.Application.UseCase.AtualizarFornecedor;
 using Jr.Backend.Produtos.Application.UseCase.CadastrarFornecedor;
 using Jr.Backend.Produtos.Infrastructure.DependencyInjection;
 using MassTransit;
@@ -31,13 +32,15 @@ namespace Jr.Backend.Produtos.WorkerService.DependencyInjection
                          ep.UseMessageRetry(r => r.Interval(2, 100));
                          ep.Consumer<CadastrarFornecedorUseCaseValidation>(provider);
                      });
-                     //cfg.ReceiveEndpoint("FornecedorAtualizadoEvent", ep =>
-                     //{
-                     //    ep.PrefetchCount = 10;
-                     //    ep.UseMessageRetry(r => r.Interval(2, 100));
-                     //});
+                     cfg.ReceiveEndpoint("FornecedorAtualizadoEvent", ep =>
+                     {
+                         ep.PrefetchCount = 10;
+                         ep.UseMessageRetry(r => r.Interval(2, 100));
+                         ep.Consumer<AtualizarFornecedorUseCaseValidation>(provider);
+                     });
                  }));
                 x.AddConsumer<CadastrarFornecedorUseCaseValidation>();
+                x.AddConsumer<AtualizarFornecedorUseCaseValidation>();
             });
 
             services.AddMassTransitHostedService();
