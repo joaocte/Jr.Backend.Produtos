@@ -1,4 +1,7 @@
 ﻿using GreenPipes;
+using Jr.Backend.Produtos.Application.DependencyInjection;
+using Jr.Backend.Produtos.Application.UseCase.CadastrarFornecedor;
+using Jr.Backend.Produtos.Infrastructure.DependencyInjection;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,6 +13,8 @@ namespace Jr.Backend.Produtos.WorkerService.DependencyInjection
     {
         public static void AddServiceDependencyWorkerService(this IServiceCollection services, IConfiguration configuration)
         {
+            services.AddServiceDependencyInfrastructure();
+            services.AddServiceDependencyApplication();
             services.AddMassTransit(x =>
             {
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
@@ -24,14 +29,17 @@ namespace Jr.Backend.Produtos.WorkerService.DependencyInjection
                      {
                          ep.PrefetchCount = 10;
                          ep.UseMessageRetry(r => r.Interval(2, 100));
+                         ep.Consumer<CadastrarFornecedorUseCaseValidation>(provider);
                      });
-                     cfg.ReceiveEndpoint("FornecedorAtualizadoEvent", ep =>
-                     {
-                         ep.PrefetchCount = 10;
-                         ep.UseMessageRetry(r => r.Interval(2, 100));
-                     });
+                     //cfg.ReceiveEndpoint("FornecedorAtualizadoEvent", ep =>
+                     //{
+                     //    ep.PrefetchCount = 10;
+                     //    ep.UseMessageRetry(r => r.Interval(2, 100));
+                     //});
                  }));
+                x.AddConsumer<CadastrarFornecedorUseCaseValidation>();
             });
+
             services.AddMassTransitHostedService();
         }
     }
