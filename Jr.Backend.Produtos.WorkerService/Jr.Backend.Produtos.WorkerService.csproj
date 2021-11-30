@@ -1,12 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>dotnet-Jr.Backend.Produtos.WorkerService-5F450F19-DDB1-4758-8384-EC36724CCCA6</UserSecretsId>
+    <UserSecretsId>dotnet-Jror.Backend.Produtos.WorkerService-5F450F19-DDB1-4758-8384-EC36724CCCA6</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jr.Backend.Message.Events" Version="1.0.0-alpha-06" />
+    <PackageReference Include="Jror.Backend.Message.Events" Version="1.0.0" />
     <PackageReference Include="MassTransit" Version="7.2.4" />
     <PackageReference Include="MassTransit.AspNetCore" Version="7.2.4" />
     <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.2.4" />

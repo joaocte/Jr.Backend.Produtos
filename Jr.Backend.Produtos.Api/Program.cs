@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.Produtos.Api
+namespace Jror.Backend.Produtos.Api
 {
     public class Program
     {

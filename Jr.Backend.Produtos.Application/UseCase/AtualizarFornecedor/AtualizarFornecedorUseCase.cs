@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Jr.Backend.Libs.Domain.Abstractions.Interfaces.Repository;
 using Jr.Backend.Message.Events.Fornecedor.Events;
-using Jr.Backend.Produtos.Infrastructure.Entity;
-using Jr.Backend.Produtos.Infrastructure.Interfaces;
+using Jror.Backend.Libs.Infrastructure.Data.Shared.Interfaces;
+using Jror.Backend.Produtos.Infrastructure.Entity;
+using Jror.Backend.Produtos.Infrastructure.Interfaces;
 using MassTransit;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.Produtos.Application.UseCase.AtualizarFornecedor
+namespace Jror.Backend.Produtos.Application.UseCase.AtualizarFornecedor
 {
     public class AtualizarFornecedorUseCase : IAtualizarFornecedorUseCase
     {

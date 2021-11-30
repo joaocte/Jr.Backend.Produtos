@@ -1,9 +1,9 @@
 ﻿using Jr.Backend.Message.Events.Fornecedor.Events;
-using Jr.Backend.Produtos.Infrastructure.Interfaces;
+using Jror.Backend.Produtos.Infrastructure.Interfaces;
 using MassTransit;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.Produtos.Application.UseCase.AtualizarFornecedor
+namespace Jror.Backend.Produtos.Application.UseCase.AtualizarFornecedor
 {
     public class AtualizarFornecedorUseCaseValidation : IAtualizarFornecedorUseCase
     {

@@ -2,7 +2,7 @@
 using MassTransit;
 using System;
 
-namespace Jr.Backend.Produtos.Application.UseCase.AtualizarFornecedor
+namespace Jror.Backend.Produtos.Application.UseCase.AtualizarFornecedor
 {
     public interface IAtualizarFornecedorUseCase : IConsumer<FornecedorAtualizadoEvent>, IDisposable
     {

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Jr.Backend.Produtos.Application.AutoMapper;
-using Jr.Backend.Produtos.Application.UseCase.AtualizarFornecedor;
-using Jr.Backend.Produtos.Application.UseCase.CadastrarFornecedor;
+using Jror.Backend.Produtos.Application.AutoMapper;
+using Jror.Backend.Produtos.Application.UseCase.AtualizarFornecedor;
+using Jror.Backend.Produtos.Application.UseCase.CadastrarFornecedor;
 using MassTransit;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
 
-namespace Jr.Backend.Produtos.Application.DependencyInjection
+namespace Jror.Backend.Produtos.Application.DependencyInjection
 {
     public static class ServicesDependency
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Jr.Backend.Produtos.Api.Controllers
+namespace Jror.Backend.Produtos.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

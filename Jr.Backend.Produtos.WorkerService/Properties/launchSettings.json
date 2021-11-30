@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Jr.Backend.Produtos.WorkerService": {
+    "Jror.Backend.Produtos.WorkerService": {
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

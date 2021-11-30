@@ -1,7 +1,7 @@
-﻿using Jr.Backend.Libs.Domain.Abstractions.Interfaces.Repository;
-using Jr.Backend.Produtos.Infrastructure.Entity;
+﻿using Jror.Backend.Libs.Infrastructure.Data.Shared.Interfaces;
+using Jror.Backend.Produtos.Infrastructure.Entity;
 
-namespace Jr.Backend.Produtos.Infrastructure.Interfaces
+namespace Jror.Backend.Produtos.Infrastructure.Interfaces
 {
     public interface IFornecedorRepository : IRepository<Fornecedor>
     {

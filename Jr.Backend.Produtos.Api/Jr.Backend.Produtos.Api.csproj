@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jr.Backend.Libs.API" Version="1.0.1" />
-    <PackageReference Include="Jr.Backend.Libs.API.Abstractions" Version="1.0.1" />
-    <PackageReference Include="Jr.Backend.Libs.Framework" Version="1.0.1" />
-    <PackageReference Include="Jr.Backend.Libs.Security" Version="1.0.1" />
-    <PackageReference Include="Jr.Backend.Libs.Security.Abstractions" Version="1.0.1" />
+    <PackageReference Include="Jror.Backend.Libs.API" Version="1.0.4" />
+    <PackageReference Include="Jror.Backend.Libs.API.Abstractions" Version="1.0.4" />
+    <PackageReference Include="Jror.Backend.Libs.Framework" Version="1.0.4" />
+    <PackageReference Include="Jror.Backend.Libs.Security" Version="1.0.4" />
+    <PackageReference Include="Jror.Backend.Libs.Security.Abstractions" Version="1.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 

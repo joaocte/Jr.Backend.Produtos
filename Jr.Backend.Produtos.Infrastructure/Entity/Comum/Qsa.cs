@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jr.Backend.Produtos.Infrastructure.Entity.Comum
+namespace Jror.Backend.Produtos.Infrastructure.Entity.Comum
 {
     public class Qsa
     {
