@@ -1,10 +1,10 @@
-using Jror.Backend.Produtos.WorkerService.DependencyInjection;
+using Jr.Backend.Produtos.WorkerService.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.IO;
 
-namespace Jror.Backend.Produtos.WorkerService
+namespace Jr.Backend.Produtos.WorkerService
 {
     public class Program
     {

@@ -1,3 +1,5 @@
+using Jr.Backend.Produtos.Application.DependencyInjection;
+using Jr.Backend.Produtos.Infrastructure.DependencyInjection;
 using Jror.Backend.Libs.Api.DependencyInjection;
 using Jror.Backend.Libs.API.Abstractions;
 using Jror.Backend.Libs.API.Abstractions.Interface;
@@ -6,15 +8,13 @@ using Jror.Backend.Libs.Security.Abstractions.Infrastructure.Interfaces;
 using Jror.Backend.Libs.Security.DependencyInjection;
 using Jror.Backend.Libs.Security.Infrastructure;
 using Jror.Backend.Libs.Security.Middleware;
-using Jror.Backend.Produtos.Application.DependencyInjection;
-using Jror.Backend.Produtos.Infrastructure.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Jror.Backend.Produtos.Api
+namespace Jr.Backend.Produtos.Api
 {
     public class Startup
     {

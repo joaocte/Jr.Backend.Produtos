@@ -1,9 +1,9 @@
-﻿using Jr.Backend.Message.Events.Fornecedor.Events;
-using Jror.Backend.Produtos.Infrastructure.Interfaces;
+﻿using Jr.Backend.Produtos.Infrastructure.Interfaces;
+using Jror.Backend.Message.Events.Fornecedor.Events;
 using MassTransit;
 using System.Threading.Tasks;
 
-namespace Jror.Backend.Produtos.Application.UseCase.CadastrarFornecedor
+namespace Jr.Backend.Produtos.Application.UseCase.CadastrarFornecedor
 {
     public class CadastrarFornecedorUseCaseValidation : ICadastrarFornecedorUseCase
     {

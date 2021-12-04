@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Jror.Backend.Produtos.Infrastructure.Entity.Comum
+namespace Jr.Backend.Produtos.Infrastructure.Entity.Comum
 {
     public class CnaesSecundario
     {

@@ -1,12 +1,12 @@
-﻿using Jror.Backend.Libs.Infrastructure.MongoDB.Abstractions;
+﻿using Jr.Backend.Produtos.Infrastructure.Entity;
+using Jr.Backend.Produtos.Infrastructure.Interfaces;
+using Jr.Backend.Produtos.Infrastructure.Repository;
+using Jror.Backend.Libs.Infrastructure.MongoDB.Abstractions;
 using Jror.Backend.Libs.Infrastructure.MongoDB.Abstractions.Interfaces;
 using Jror.Backend.Libs.Infrastructure.MongoDB.DependencyInjection;
-using Jror.Backend.Produtos.Infrastructure.Entity;
-using Jror.Backend.Produtos.Infrastructure.Interfaces;
-using Jror.Backend.Produtos.Infrastructure.Repository;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Jror.Backend.Produtos.Infrastructure.DependencyInjection
+namespace Jr.Backend.Produtos.Infrastructure.DependencyInjection
 {
     public static class ServicesDependency
     {

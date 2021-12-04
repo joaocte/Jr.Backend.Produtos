@@ -1,18 +1,18 @@
 ﻿using AutoMapper;
-using Jr.Backend.Message.Events.Fornecedor.Events;
-using Jror.Backend.Produtos.Infrastructure.Entity;
-using Jror.Backend.Produtos.Infrastructure.Entity.Comum;
+using Jr.Backend.Produtos.Infrastructure.Entity;
+using Jr.Backend.Produtos.Infrastructure.Entity.Comum;
+using Jror.Backend.Message.Events.Fornecedor.Events;
 
-namespace Jror.Backend.Produtos.Application.AutoMapper
+namespace Jr.Backend.Produtos.Application.AutoMapper
 {
     public class MappingProfileToEntity : Profile
     {
         public MappingProfileToEntity()
         {
-            CreateMap<Jr.Backend.Message.Share.Fornecedor.InformacoesBancarias, InformacoesBancarias>();
-            CreateMap<Jr.Backend.Message.Share.Fornecedor.Endereco, Endereco>();
-            CreateMap<Jr.Backend.Message.Share.Fornecedor.Qsa, Qsa>();
-            CreateMap<Jr.Backend.Message.Share.Fornecedor.CnaesSecundario, CnaesSecundario>();
+            CreateMap<Jror.Backend.Message.Share.Fornecedor.InformacoesBancarias, InformacoesBancarias>();
+            CreateMap<Jror.Backend.Message.Share.Fornecedor.Endereco, Endereco>();
+            CreateMap<Jror.Backend.Message.Share.Fornecedor.Qsa, Qsa>();
+            CreateMap<Jror.Backend.Message.Share.Fornecedor.CnaesSecundario, CnaesSecundario>();
             CreateMap<FornecedorCadastradoEvent, Fornecedor>();
         }
     }

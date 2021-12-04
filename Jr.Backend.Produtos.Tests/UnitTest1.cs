@@ -1,7 +1,6 @@
-using System;
 using Xunit;
 
-namespace Jror.Backend.Produtos.Tests
+namespace Jr.Backend.Produtos.Tests
 {
     public class UnitTest1
     {

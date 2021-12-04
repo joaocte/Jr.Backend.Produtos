@@ -1,10 +1,10 @@
-﻿using Jror.Backend.Produtos.Infrastructure.Entity.Comum;
+﻿using Jr.Backend.Produtos.Infrastructure.Entity.Comum;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 
-namespace Jror.Backend.Produtos.Infrastructure.Entity
+namespace Jr.Backend.Produtos.Infrastructure.Entity
 {
     public class Fornecedor
     {
