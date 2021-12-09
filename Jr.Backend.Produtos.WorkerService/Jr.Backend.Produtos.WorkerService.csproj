@@ -7,10 +7,10 @@
 
   <ItemGroup>
     <PackageReference Include="Jror.Backend.Message.Events" Version="1.0.3" />
-    <PackageReference Include="MassTransit" Version="7.2.4" />
-    <PackageReference Include="MassTransit.AspNetCore" Version="7.2.4" />
-    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.2.4" />
-    <PackageReference Include="MassTransit.RabbitMQ" Version="7.2.4" />
+    <PackageReference Include="MassTransit" Version="7.3.0" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.0" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.0" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
   </ItemGroup>
 
